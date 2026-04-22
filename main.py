@@ -266,7 +266,7 @@ class DiscordSender:
             "description": f"**{category}** • {emoji} {direction} Signal",
             "color": color,
             "fields": embed_fields,
-            "footer": {"text": f"Received: {timestamp} • TCT Pure Strategy"},
+            "footer": {"text": f"Received: {timestamp} • Pure Strategy"},
             "timestamp": datetime.now().isoformat()
         }
         
@@ -276,12 +276,12 @@ class DiscordSender:
                 "title": title,
                 "description": f"```\n{message_text}\n```",
                 "color": color,
-                "footer": {"text": f"Received: {timestamp} • TCT Pure Strategy"}
+                "footer": {"text": f"Received: {timestamp} • Pure Strategy"}
             }
         
         payload = {
             "embeds": [embed],
-            "username": "📊 TCT Signal Bot",
+            "username": "📊 Signal Bot",
             "avatar_url": "https://cdn-icons-png.flaticon.com/512/906/906334.png"
         }
         
@@ -418,7 +418,7 @@ class TelegramPoller:
         # Send startup message to Discord
         startup_embed = {
             "title": "✅ Signal Forwarder Active",
-            "description": "Monitoring Telegram for trading signals...\n\n**Assets Monitored:**\n• Forex 💱\n• Indices 📈\n• Metals 🥇\n• Commodities 📦\n• Oil 🛢️\n\n**Strategy:** Pure TCT (A+ and A setups only)",
+            "description": "Monitoring Telegram for trading signals...\n\n**Assets Monitored:**\n• Forex 💱\n• Indices 📈\n• Metals 🥇\n• Commodities 📦\n• Oil 🛢️\n\n**Strategy:** Pure (A+ and A setups only)",
             "color": 0x00ff00,
             "footer": {"text": f"Started at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"}
         }
@@ -491,7 +491,7 @@ if __name__ == "__main__":
 ╠══════════════════════════════════════════════════════════════╣
 ║  Forwards trading signals from Telegram to Discord          ║
 ║  Assets: Stocks, Indices, Forex, Metals, Commodities, Oil   ║
-║  Strategy: Pure TCT (A+ and A setups only)                  ║
+║  Strategy: Pure (A+ and A setups only)                  ║
 ╚══════════════════════════════════════════════════════════════╝
     """)
     
