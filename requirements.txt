@@ -1,9 +1,38 @@
-# requirements.txt - COMPATIBLE WITH PYTHON 3.13
-ccxt==4.3.22
-pandas==2.2.3  # Updated to version compatible with Python 3.13
-numpy==2.0.1
-python-telegram-bot==21.10
-scipy==1.14.1
-aiohttp==3.9.5
-python-dotenv==1.0.1
-yfinance==0.2.40
+# ==================== CORE DATA & ANALYSIS ====================
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+statsmodels>=0.14.0
+ta>=0.10.2
+yfinance>=0.2.28
+
+# ==================== CHARTING & VISUALIZATION ====================
+plotly>=5.18.0
+kaleido>=0.2.1  # Required for saving plotly charts as images
+
+# ==================== EXCHANGE & TRADING ====================
+ccxt>=4.1.48
+
+# ==================== TELEGRAM BOT ====================
+pyTelegramBotAPI>=4.19.1
+
+# ==================== NETWORKING & COMMUNICATION ====================
+requests>=2.31.0
+aiohttp>=3.8.0
+websockets>=12.0
+websocket-client>=1.6.3
+
+# ==================== WEB & API ====================
+flask>=3.0.0
+flask-socketio>=5.3.6
+flask-cors>=4.0.0
+
+# ==================== ASYNC & PERFORMANCE ====================
+asyncio>=3.4.3
+aiofiles>=23.2.0
+
+# ==================== UTILITIES ====================
+python-dotenv>=1.0.0
+colorama>=0.4.6
+python-dateutil>=2.8.2
+pytz>=2023.3
